@@ -1,5 +1,6 @@
+/* ========================================================= Mobile ========================================================= */
 .our-portfolio {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .our-portfolio-title {
@@ -15,6 +16,53 @@
 
 .our-portfolio-list {
     display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.our-portfolio-list-item {
+    background: #FFFFFF;
+}
+
+.our-portfolio-list-overlay {
+    display: none;
+}
+
+.our-portfolio-list-title {
+    color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.20;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+/* ========================================================= Tablet ========================================================= */
+@media screen and (min-width: 768px) {
+.our-portfolio-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    row-gap: 72px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.our-portfolio-list-item {
+    background: #FFFFFF;
+    width: 356px;
+}
+}
+
+/* ========================================================= Descktop ========================================================= */
+@media screen and (min-width: 1158px) {
+.our-portfolio {
+    padding: 120px 0;
+}
+
+.our-portfolio-list {
+    display: flex;
+    flex-direction: row;
     gap: 24px;
     row-gap: 48px;
     flex-wrap: wrap;
@@ -22,6 +70,7 @@
 
 .our-portfolio-list-item {
     background: #FFFFFF;
+    width: 360px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -39,6 +88,7 @@
 }
 
 .our-portfolio-list-overlay {
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -56,12 +106,4 @@
     border: 1px solid #e7e9fc;
     border-top: none;
 }
-
-.our-portfolio-list-title {
-    color: #2E2F42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.20;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
 }

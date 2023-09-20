@@ -35,9 +35,11 @@ text-transform: capitalize;
 @media screen and (min-width: 768px) {
 .advantages-list {
     display: flex;
-    flex-direction: column;
-    gap: 72px;
-    align-items: flex-start;
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    justify-content: center;
 }
 
 .advantages-list-item {
