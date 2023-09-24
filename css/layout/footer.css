@@ -1,14 +1,11 @@
+/* ========================================================= Mobile ========================================================= */
 .footer {
     background-color: #2E2F42;
-    padding: 100px 0;
+    padding: 97.5px 0;
 }
 
 .footer-container {
-    display: flex;
-}
-
-.footer-info {
-    margin-right: 120px;
+    text-align: center;
 }
 
 .footer-logo {
@@ -20,7 +17,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: inline-block;
-    margin-bottom: 16px;
+    margin-bottom: 17.5px;
 }
 
 .footer-logo-span {
@@ -33,6 +30,8 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
+    text-align: left;
+    margin-bottom: 72px;
 }
 
 .footer-socials-text {
@@ -47,6 +46,8 @@
 .footer-social-icons-list {
     display: flex;
     gap: 16px;
+    justify-content: center;
+    margin-bottom: 72px;
 }
 
 .footer-social-icons-item {
@@ -65,22 +66,8 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-icons-link:hover,
-.footer-social-icons-link:focus {
-    background-color: #31d0aa;
-}
-
 .footer-social-icon {
     fill: var(--color-cloud);
-}
-
-.footer-subscribe {
-    margin-left: auto;
-}
-
-.footer-subscribe-form {
-    display: flex;
-    gap: 24px;
 }
 
 .footer-subscribe-text {
@@ -93,7 +80,7 @@
 }
 
 .footer-subscribe-form-label-input {
-    width: 264px;
+    width: 288px;
     height: 40px;
     flex-shrink: 0;
     border-radius: 4px;
@@ -106,10 +93,11 @@
     letter-spacing: 0.04em;
     padding-left: 16px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    margin-bottom: 16px;
 }
 
 .footer-subscribe-button {
-    display: flex;
+    display: inline-flex;
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
@@ -129,4 +117,63 @@
 
 .footer-subscribe-button-icon {
     margin-left: 16px;
+}
+
+/* ========================================================= Tablet ========================================================= */
+@media screen and (min-width: 768px) {
+.footer-container {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 72px;
+    padding-left: 108px;
+}
+
+.footer-text {
+    margin-bottom: 0;
+}
+
+.footer-social-icons-list {
+    margin-bottom: 0;
+}
+
+.footer-subscribe-form-label-input {
+    width: 264px;
+    margin-bottom: 0;
+}
+
+.footer-subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+}
+
+/* ========================================================= Descktop ========================================================= */
+@media screen and (min-width: 1158px) {
+.footer {
+    padding: 100px 0;
+}
+
+.footer-container {
+    gap: 0;
+    padding-left: 0;
+}
+
+.footer-info {
+    margin-right: 120px;
+}
+
+.footer-logo {
+    margin-bottom: 16px;
+}
+
+.footer-social-icons-link:hover,
+.footer-social-icons-link:focus {
+    background-color: #31d0aa;
+}
+
+.footer-subscribe {
+    margin-left: auto;
+}
 }

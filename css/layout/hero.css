@@ -44,29 +44,29 @@
 @media screen and (min-resolution: 192dpi), and (max-width: 767px),
 screen and (min-resolution: 2dppx), and (max-width: 767px),
 screen and (min-devise-pixel-ratio: 2), and (max-width: 767px) {
-.hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-        url(/images/hero/people-office-mobile@2x.jpg);
-    }
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(/images/hero/people-office-mobile@2x.jpg);
+        }
 }
 
 /* ========================================================= Tablet ========================================================= */
 @media screen and (min-width: 768px) {
-.hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-        url(/images/hero/people-office-tablet.jpg);
-        padding: 112px 0;
-
-.hero-title {
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    margin: 0 auto 36px;
-    }
-}
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(/images/hero/people-office-tablet.jpg);
+            padding: 112px 0;
+        }
+        
+    .hero-title {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        margin: 0 auto 36px;
+        }
 }
 
 @media screen and (min-resolution: 192dpi), and (min-width: 768px),
@@ -81,21 +81,21 @@ screen and (min-devise-pixel-ratio: 2), and (min-width: 768px) {
 
 /* ========================================================= Descktop ========================================================= */
 @media screen and (min-width: 1158px) {
-.hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-            url(/images/hero/people-office-decktop.jpg);
-    padding: 188px 0;
-}
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url(/images/hero/people-office-decktop.jpg);
+        padding: 188px 0;
+    }
 
-.hero-title {
-    margin: 0 auto 48px;
-}
+    .hero-title {
+        margin: 0 auto 48px;
+    }
 
-.hero-button:hover,
-.hero-button:focus {
-    background-color: #404BBF;
-}
+    .hero-button:hover,
+    .hero-button:focus {
+        background-color: #404BBF;
+    }
 }
 
 @media screen and (min-resolution: 192dpi), and (min-width: 1158px),
