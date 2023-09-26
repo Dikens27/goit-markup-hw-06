@@ -95,7 +95,7 @@ text-transform: capitalize;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: center;
+    text-align: start;
 }
 
 .advantages-list-text {
